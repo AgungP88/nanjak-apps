@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+
+header{
+  display: inline;
+}
+.navigasi {
+   background-color:rgba(0, 0, 0,0.2);
+   position: sticky;
+   top: 0;
+   list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navigasi li {
+   display: inline;
+   list-style-type: none;
+   margin-right: 0px;
+}
+
+.navigasi li a {
+   font-size: 18px;
+   font-weight: 400;
+   text-decoration: none;
+   color: black;
+   padding: 14px 16px;
+   font-size: 17px;
+   transition: 0.3s;
+   text-align: center;
+}
+
+h2 {
+   color: black;
+}
+
+.navigasi a:hover {
+   background-color: #00a2c6;
+   color: white;
+   font-size: 18px;
+   font-weight: 400;
+   text-decoration: none;
+}
+
+body {
+   font-family:sans-serif;
+   margin: 0;
+   padding: 0;
+}
+
+.judul{
+  background-image: url("img/gunung_head.jpg");
+  min-height: 520px;
+  width: 100%;
+  font-size: 25px;
+   padding: 60px;
+   text-align: center;
+   color: black;
+}
+
+.nanjak{
+  font-family: 'Times New Roman';
+}
+
+.sub_nanjak{
+  font-family: 'calibri';
+}
+
+
+main{
+  padding: 20px;
+  overflow: auto;
+}
+
+#konten{
+  float: left;
+  width: 70%;
+}
+
+.card {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   border-radius: 5px;
+   padding: 20px;
+   margin-top: 20px;
+   overflow: auto;
+}
+
+.featured_image{
+  width: 50%;
+  height: 250px;
+  float: left;
+  padding-right: 15px;
+  border-radius: 30px;
+}
+
+aside {
+  float: right;
+  width: 30%;
+  padding-left: 20px;
+}
+
+.sub_judul:hover{
+  color: #00a2c6;
+}
+
+.profile header{
+
+}
+
+.profil_img{
+  width: 250px;
+  height: 250px;
+  margin-left: 20px;
+  border-radius: 200px;
+}
+
+footer {
+   padding: 20px;
+   color: white;
+   background-color: #696969;
+   text-align: center;
+   overflow: auto;
+}
+
+.fitur {
+   padding: 20px;
+   color: white;
+   background-color: #696969;
+   text-align: center;
+   overflow: auto;
+   align-content: center;
+}
+
+.fitur_card{
+     margin-left: 25%;
+}
+
+.card_fitur1 {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   border-radius: 5px;
+   padding: 20px;
+   margin-top: 20px;
+   width: 200px;
+   height: 300px;
+   float: left;
+
+}
+
+.card_fitur1:hover{
+  cursor: pointer;
+}
+
+.icon_fitur{
+  width: 100px;
+  border-radius: 200px;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+   #content,
+   aside {
+       width: 100%;
+       padding: 0;
+   }
+   #konten{
+     width: 100%;
+   }
+}
+
+.navigasi li.icon {
+  display: none;
+}
+
+.navigasi a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .navigasi li:not(:first-child) {display: none;}
+  .navigasi li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navigasi.responsive {position: relative;}
+  .navigasi.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .navigasi.responsive li {
+    float: none;
+    display: inline;
+  }
+  .navigasi.responsive li a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
